@@ -1,0 +1,14 @@
+pass TCP 10.168.1.3 20-40
+pass UDP 203.168.1.1/24 50
+pass UDP 192.168.1.1/24 20-40
+pass UDP 192.168.1.1/8 50
+fail UDP 192.168.1.1/24 50
+pass ICMP 192.168.1.1 20 
+fail TCP any 42
+pass dns facebook.com
+pass dns abhishek.facebook.com
+pass dns gamer.facebook.com
+fail dns rahul.facebook.com
+pass dns *.edu
+fail dns *.in
+fail dns abcd.edu
